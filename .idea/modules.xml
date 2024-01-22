@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-persistence-spring-data-hibernate.iml" filepath="$PROJECT_DIR$/.idea/java-persistence-spring-data-hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch10/managing-data/managing-data.iml" filepath="$PROJECT_DIR$/Ch10/managing-data/managing-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch10/managing-data2/managing-data2.iml" filepath="$PROJECT_DIR$/Ch10/managing-data2/managing-data2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/manytomany-bidirectional/manytomany-bidirectional.iml" filepath="$PROJECT_DIR$/Ch09/manytomany-bidirectional/manytomany-bidirectional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/manytomany-linkentity/manytomany-linkentity.iml" filepath="$PROJECT_DIR$/Ch09/manytomany-linkentity/manytomany-linkentity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/manytomany-ternary/manytomany-ternary.iml" filepath="$PROJECT_DIR$/Ch09/manytomany-ternary/manytomany-ternary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch07/mapping-inheritance-embeddable/mapping-inheritance-embeddable.iml" filepath="$PROJECT_DIR$/Ch07/mapping-inheritance-embeddable/mapping-inheritance-embeddable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch07/mapping-inheritance-mappedsuperclass/mapping-inheritance-mappedsuperclass.iml" filepath="$PROJECT_DIR$/Ch07/mapping-inheritance-mappedsuperclass/mapping-inheritance-mappedsuperclass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch07/mapping-inheritance-mixed/mapping-inheritance-mixed.iml" filepath="$PROJECT_DIR$/Ch07/mapping-inheritance-mixed/mapping-inheritance-mixed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch07/mapping-inheritance-singletable/mapping-inheritance-singletable.iml" filepath="$PROJECT_DIR$/Ch07/mapping-inheritance-singletable/mapping-inheritance-singletable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch07/mapping-inheritance-tableperclass/mapping-inheritance-tableperclass.iml" filepath="$PROJECT_DIR$/Ch07/mapping-inheritance-tableperclass/mapping-inheritance-tableperclass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch06/mapping-value-types/mapping-value-types.iml" filepath="$PROJECT_DIR$/Ch06/mapping-value-types/mapping-value-types.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch06/mapping-value-types2/mapping-value-types2.iml" filepath="$PROJECT_DIR$/Ch06/mapping-value-types2/mapping-value-types2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/maps-mapkey/maps-mapkey.iml" filepath="$PROJECT_DIR$/Ch09/maps-mapkey/maps-mapkey.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/maps-ternary/maps-ternary.iml" filepath="$PROJECT_DIR$/Ch09/maps-ternary/maps-ternary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/onetomany-bag/onetomany-bag.iml" filepath="$PROJECT_DIR$/Ch09/onetomany-bag/onetomany-bag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/onetomany-embeddable/onetomany-embeddable.iml" filepath="$PROJECT_DIR$/Ch09/onetomany-embeddable/onetomany-embeddable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/onetomany-embeddable-jointable/onetomany-embeddable-jointable.iml" filepath="$PROJECT_DIR$/Ch09/onetomany-embeddable-jointable/onetomany-embeddable-jointable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/onetomany-jointable/onetomany-jointable.iml" filepath="$PROJECT_DIR$/Ch09/onetomany-jointable/onetomany-jointable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/onetomany-list/onetomany-list.iml" filepath="$PROJECT_DIR$/Ch09/onetomany-list/onetomany-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/onetoone-foreigngenerator/onetoone-foreigngenerator.iml" filepath="$PROJECT_DIR$/Ch09/onetoone-foreigngenerator/onetoone-foreigngenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/onetoone-foreignkey/onetoone-foreignkey.iml" filepath="$PROJECT_DIR$/Ch09/onetoone-foreignkey/onetoone-foreignkey.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/onetoone-jointable/onetoone-jointable.iml" filepath="$PROJECT_DIR$/Ch09/onetoone-jointable/onetoone-jointable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch09/onetoone-sharedprimarykey/onetoone-sharedprimarykey.iml" filepath="$PROJECT_DIR$/Ch09/onetoone-sharedprimarykey/onetoone-sharedprimarykey.iml" />
+    </modules>
+  </component>
+</project>

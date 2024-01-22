@@ -31,7 +31,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import javax.persistence.NoResultException;
+import jakarta.persistence.NoResultException;
 import java.math.BigDecimal;
 import java.util.List;
 

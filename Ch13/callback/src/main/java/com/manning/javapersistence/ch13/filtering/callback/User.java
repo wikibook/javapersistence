@@ -22,8 +22,8 @@ package com.manning.javapersistence.ch13.filtering.callback;
 
 import com.manning.javapersistence.ch13.Constants;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "USERS")

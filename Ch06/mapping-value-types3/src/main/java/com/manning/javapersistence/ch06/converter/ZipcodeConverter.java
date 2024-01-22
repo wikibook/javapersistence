@@ -24,8 +24,8 @@ import com.manning.javapersistence.ch06.model.GermanZipcode;
 import com.manning.javapersistence.ch06.model.SwissZipcode;
 import com.manning.javapersistence.ch06.model.Zipcode;
 
-import javax.persistence.AttributeConverter;
-import javax.persistence.Converter;
+import jakarta.persistence.AttributeConverter;
+import jakarta.persistence.Converter;
 
 @Converter
 public class ZipcodeConverter

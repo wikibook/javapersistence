@@ -23,11 +23,11 @@ package com.manning.javapersistence.ch13.filtering.envers;
 import com.manning.javapersistence.ch13.Constants;
 import org.hibernate.envers.Audited;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "USERS")

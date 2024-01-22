@@ -23,8 +23,8 @@ package com.manning.javapersistence.ch09.onetoone.jointable;
 import com.manning.javapersistence.ch09.Constants;
 import org.hibernate.annotations.CreationTimestamp;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 @Entity

@@ -20,13 +20,16 @@
  */
 package com.manning.javapersistence.ch06.model;
 
+import com.manning.javapersistence.ch06.converter.DefaultMonetaryAmountUserType;
+import com.manning.javapersistence.ch06.converter.EURMonetaryAmountUserType;
+import com.manning.javapersistence.ch06.converter.USDMonetaryAmountUserType;
 import org.hibernate.annotations.*;
 
-import javax.persistence.*;
-import javax.persistence.AccessType;
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.persistence.AccessType;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -53,13 +56,17 @@ public class Item {
     private String name;
 
     @NotNull
-    @org.hibernate.annotations.Type(
-            type = "monetary_amount_usd"
+    @org.hibernate.annotations.CompositeType(
+            value = USDMonetaryAmountUserType.class
     )
-    @org.hibernate.annotations.Columns(columns = {
-            @Column(name = "BUYNOWPRICE_AMOUNT"),
-            @Column(name = "BUYNOWPRICE_CURRENCY", length = 3)
-    })
+    @AttributeOverride(
+            name = "value",
+            column = @Column(name = "BUYNOWPRICE_AMOUNT")
+    )
+    @AttributeOverride(
+            name = "currency",
+            column = @Column(name = "BUYNOWPRICE_CURRENCY", length = 3)
+    )
     private MonetaryAmount buyNowPrice;
 
     @OneToMany(mappedBy = "item",
@@ -99,13 +106,17 @@ public class Item {
     private LocalDateTime lastModified;
 
     @NotNull
-    @org.hibernate.annotations.Type(
-            type = "monetary_amount_eur"
+    @org.hibernate.annotations.CompositeType(
+            value = EURMonetaryAmountUserType.class
     )
-    @org.hibernate.annotations.Columns(columns = {
-            @Column(name = "INITIALPRICE_AMOUNT"),
-            @Column(name = "INITIALPRICE_CURRENCY", length = 3)
-    })
+    @AttributeOverride(
+            name = "value",
+            column = @Column(name = "INITIALPRICE_AMOUNT")
+    )
+    @AttributeOverride(
+            name = "currency",
+            column = @Column(name = "INITIALPRICE_CURRENCY", length = 3)
+    )
     private MonetaryAmount initialPrice;
 
     /* 

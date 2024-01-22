@@ -20,11 +20,11 @@
  */
 package com.manning.javapersistence.ch09.onetomany.embeddable;
 
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.NotNull;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;

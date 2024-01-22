@@ -27,7 +27,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.CriteriaQuery;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
@@ -39,8 +39,8 @@ public class HelloWorldHibernateTest {
     private static SessionFactory createSessionFactory() {
         Configuration configuration = new Configuration();
         configuration.configure().addAnnotatedClass(Message.class);
-        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().
-                applySettings(configuration.getProperties()).build();
+        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
+                .applySettings(configuration.getProperties()).build();
         return configuration.buildSessionFactory(serviceRegistry);
     }
 

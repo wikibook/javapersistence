@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch08.listofstrings;
 
 import com.manning.javapersistence.ch08.Constants;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.*;
 
 @Entity

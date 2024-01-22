@@ -22,11 +22,11 @@ package com.manning.javapersistence.ch12.batch;
 
 import com.manning.javapersistence.ch12.Constants;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @org.hibernate.annotations.BatchSize(size = 10)

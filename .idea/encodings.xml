@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Ch04/springdatajpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch04/springdatajpa2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc4/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc5/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc6/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch16/spring-data-rest-events/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch16/spring-data-rest-projections/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch16/spring-data-rest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch17/springdatamongodb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch17/springdatamongodb2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch17/springdatamongodb3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch20/1 spring testing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch20/2 spring profiles/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ch20/3 spring listeners/src/main/java" charset="UTF-8" />
+  </component>
+</project>

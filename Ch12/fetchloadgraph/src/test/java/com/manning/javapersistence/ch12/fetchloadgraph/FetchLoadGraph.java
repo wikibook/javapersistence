@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch12.fetchloadgraph;
 
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.HashMap;
@@ -105,7 +105,7 @@ public class FetchLoadGraph {
 
             Map<String, Object> properties = new HashMap<>();
             properties.put(
-                    "javax.persistence.loadgraph",
+                    "jakarta.persistence.loadgraph",
                     em.getEntityGraph(Item.class.getSimpleName()) // "Item"
             );
 
@@ -128,7 +128,7 @@ public class FetchLoadGraph {
             EntityGraph<Item> itemGraph = em.createEntityGraph(Item.class);
 
             Map<String, Object> properties = new HashMap<>();
-            properties.put("javax.persistence.loadgraph", itemGraph);
+            properties.put("jakarta.persistence.loadgraph", itemGraph);
 
             Item item = em.find(Item.class, ITEM_ID, properties);
 
@@ -155,7 +155,7 @@ public class FetchLoadGraph {
 
             Map<String, Object> properties = new HashMap<>();
             properties.put(
-                    "javax.persistence.loadgraph",
+                    "jakarta.persistence.loadgraph",
                     em.getEntityGraph("ItemSeller")
             );
 
@@ -182,7 +182,7 @@ public class FetchLoadGraph {
             itemGraph.addAttributeNodes(Item_.seller); // Static metamodel
 
             Map<String, Object> properties = new HashMap<>();
-            properties.put("javax.persistence.loadgraph", itemGraph);
+            properties.put("jakarta.persistence.loadgraph", itemGraph);
 
             Item item = em.find(Item.class, ITEM_ID, properties);
             // select i.*, u.*
@@ -208,7 +208,7 @@ public class FetchLoadGraph {
 
             List<Item> items =
                     em.createQuery("select i from Item i", Item.class)
-                            .setHint("javax.persistence.loadgraph", itemGraph)
+                            .setHint("jakarta.persistence.loadgraph", itemGraph)
                             .getResultList();
             // select i.*, u.*
             //  from ITEM i
@@ -240,7 +240,7 @@ public class FetchLoadGraph {
 
             Map<String, Object> properties = new HashMap<>();
             properties.put(
-                    "javax.persistence.loadgraph",
+                    "jakarta.persistence.loadgraph",
                     em.getEntityGraph("BidBidderItem")
             );
 
@@ -264,7 +264,7 @@ public class FetchLoadGraph {
             bidGraph.addAttributeNodes("bidder", "item");
 
             Map<String, Object> properties = new HashMap<>();
-            properties.put("javax.persistence.loadgraph", bidGraph);
+            properties.put("jakarta.persistence.loadgraph", bidGraph);
 
             Bid bid = em.find(Bid.class, BID_ID, properties);
 
@@ -291,7 +291,7 @@ public class FetchLoadGraph {
 
             Map<String, Object> properties = new HashMap<>();
             properties.put(
-                    "javax.persistence.loadgraph",
+                    "jakarta.persistence.loadgraph",
                     em.getEntityGraph("BidBidderItemSellerBids")
             );
 
@@ -319,7 +319,7 @@ public class FetchLoadGraph {
             itemGraph.addAttributeNodes(Item_.seller, Item_.bids);
 
             Map<String, Object> properties = new HashMap<>();
-            properties.put("javax.persistence.loadgraph", bidGraph);
+            properties.put("jakarta.persistence.loadgraph", bidGraph);
 
             Bid bid = em.find(Bid.class, BID_ID, properties);
 

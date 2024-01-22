@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch08.setofstringsorderby;
 
 import com.manning.javapersistence.ch08.Constants;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -40,7 +40,7 @@ public class Item {
     @CollectionTable(name = "IMAGE")
     @Column(name = "FILENAME")
     // @javax.persistence.OrderBy // One possible order: "FILENAME asc"
-    @org.hibernate.annotations.OrderBy(clause = "FILENAME desc")
+    @org.hibernate.annotations.SQLOrder("FILENAME desc")
     private Set<String> images = new LinkedHashSet<>();
 
     public Item(String name) {

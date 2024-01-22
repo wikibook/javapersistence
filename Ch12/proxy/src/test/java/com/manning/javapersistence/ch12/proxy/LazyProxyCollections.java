@@ -22,18 +22,18 @@ package com.manning.javapersistence.ch12.proxy;
 
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.PersistenceUtil;
+import jakarta.persistence.PersistenceUtil;
 
 import org.hibernate.Hibernate;
-import org.hibernate.proxy.HibernateProxyHelper;
+import org.hibernate.proxy.HibernateProxy;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -133,7 +133,7 @@ public class LazyProxyCollections {
 
             // It's not a HashSet
             assertNotEquals(HashSet.class, bids.getClass());
-            assertEquals(org.hibernate.collection.internal.PersistentSet.class, bids.getClass());
+            assertEquals(org.hibernate.collection.spi.PersistentSet.class, bids.getClass());
 
             Bid firstBid = bids.iterator().next();
             // select * from BID where ITEM_ID = ?
@@ -172,9 +172,10 @@ public class LazyProxyCollections {
             // The class is runtime generated, named something like: Item$HibernateProxy$BLsrPly8
             assertNotEquals(Item.class, item.getClass());
 
+            // 해당 클래스가 사라졌기 때문에 테스트 코드 변경.
             assertEquals(
                     Item.class,
-                    HibernateProxyHelper.getClassWithoutInitializingProxy(item)
+                    HibernateProxy.extractLazyInitializer(item).getPersistentClass()
             );
 
             PersistenceUtil persistenceUtil = Persistence.getPersistenceUtil();

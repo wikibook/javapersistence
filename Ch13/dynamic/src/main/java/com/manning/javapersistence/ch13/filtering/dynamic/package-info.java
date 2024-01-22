@@ -23,7 +23,7 @@
         name = "limitByUserRanking",
         parameters = {
             @org.hibernate.annotations.ParamDef(
-                name = "currentUserRanking", type = "int"
+                name = "currentUserRanking", type = IntegerJavaType.class
             )
         }
     )
@@ -37,9 +37,11 @@
                 )""",
         parameters = {
             @org.hibernate.annotations.ParamDef(
-                name = "currentUserRanking", type = "int"
+                name = "currentUserRanking", type = IntegerJavaType.class
             )
         }
     )
 })
 package com.manning.javapersistence.ch13.filtering.dynamic;
+
+import org.hibernate.type.descriptor.java.IntegerJavaType;

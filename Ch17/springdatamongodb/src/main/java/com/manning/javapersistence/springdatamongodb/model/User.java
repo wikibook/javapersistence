@@ -25,7 +25,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.PersistenceConstructor;
+import org.springframework.data.annotation.PersistenceCreator;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.index.CompoundIndex;
 import org.springframework.data.mongodb.core.index.CompoundIndexes;
@@ -92,7 +92,7 @@ public class User {
         this.lastName = lastName;
     }
 
-    @PersistenceConstructor
+    @PersistenceCreator
     public User(String username, String firstName, String lastName, @Value("#root.ip ?: '192.168.1.100'") String ip) {
         this.username = username;
         this.firstName = firstName;

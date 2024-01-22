@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch11.versionall;
 
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 

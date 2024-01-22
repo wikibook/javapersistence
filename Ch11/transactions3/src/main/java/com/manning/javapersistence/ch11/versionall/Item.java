@@ -22,10 +22,10 @@ package com.manning.javapersistence.ch11.versionall;
 
 import com.manning.javapersistence.ch11.Constants;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @org.hibernate.annotations.OptimisticLocking(

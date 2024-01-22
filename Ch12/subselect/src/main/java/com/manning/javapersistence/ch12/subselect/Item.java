@@ -22,8 +22,8 @@ package com.manning.javapersistence.ch12.subselect;
 
 import com.manning.javapersistence.ch12.Constants;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.Collections;
 import java.util.HashSet;

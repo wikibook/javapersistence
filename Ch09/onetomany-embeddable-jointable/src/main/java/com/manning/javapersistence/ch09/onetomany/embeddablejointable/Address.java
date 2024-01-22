@@ -20,8 +20,8 @@
  */
 package com.manning.javapersistence.ch09.onetomany.embeddablejointable;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -47,7 +47,7 @@ public class Address {
             joinColumns =
             @JoinColumn(name = "USER_ID"), // Defaults to USERS_ID
             inverseJoinColumns =
-            @JoinColumn(name = "SHIPMENT_ID") // Defaults to SHIPMENTS_ID
+            @JoinColumn(name = "SHIPMENT_ID") // Defaults to deliveries_id
     )
     private Set<Shipment> deliveries = new HashSet<>();
 

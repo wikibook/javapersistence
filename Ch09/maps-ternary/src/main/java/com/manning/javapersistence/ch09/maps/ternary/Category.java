@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch09.maps.ternary;
 
 import com.manning.javapersistence.ch09.Constants;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

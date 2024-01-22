@@ -20,16 +20,19 @@
  */
 package com.manning.javapersistence.ch05.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 @org.hibernate.annotations.Immutable
 @org.hibernate.annotations.Subselect(
-        value = "select i.ID as ITEMID, i.NAME as NAME, " +
-                "count(b.ID) as NUMBEROFBIDS " +
-                "from ITEM i left outer join BID b on i.ID = b.ITEM_ID " +
-                "group by i.ID, i.NAME"
+        value = """
+        SELECT i.ID as ITEMID, i.NAME as NAME, COUNT(b.ID) as NUMBEROFBIDS
+        FROM ITEM i
+            LEFT OUTER JOIN BID b
+                ON i.ID = b.ITEM_ID
+        GROUP BY i.ID, i.NAME
+        """
 )
 
 @org.hibernate.annotations.Synchronize({"ITEM", "BID"})

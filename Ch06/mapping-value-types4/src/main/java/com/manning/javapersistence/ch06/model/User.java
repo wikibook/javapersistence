@@ -21,8 +21,7 @@
 package com.manning.javapersistence.ch06.model;
 
 import com.manning.javapersistence.ch06.converter.ZipcodeConverter;
-
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "USERS")
@@ -39,6 +38,7 @@ public class User {
             converter = ZipcodeConverter.class,
             attributeName = "city.zipcode" // Or "city.zipcode" for nested embeddables
     )
+    @Embedded
     private Address homeAddress;
 
     public Long getId() {

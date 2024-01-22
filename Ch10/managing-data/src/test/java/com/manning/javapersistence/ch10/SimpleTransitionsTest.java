@@ -24,11 +24,11 @@ import org.hibernate.LazyInitializationException;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.FlushModeType;
-import javax.persistence.PersistenceUnitUtil;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+import jakarta.persistence.FlushModeType;
+import jakarta.persistence.PersistenceUnitUtil;
 
 import java.util.HashSet;
 import java.util.Set;

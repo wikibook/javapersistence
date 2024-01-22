@@ -22,8 +22,8 @@ package com.manning.javapersistence.ch06.converter;
 
 import com.manning.javapersistence.ch06.model.MonetaryAmount;
 
-import javax.persistence.AttributeConverter;
-import javax.persistence.Converter;
+import jakarta.persistence.AttributeConverter;
+import jakarta.persistence.Converter;
 
 @Converter
 public class MonetaryAmountConverter

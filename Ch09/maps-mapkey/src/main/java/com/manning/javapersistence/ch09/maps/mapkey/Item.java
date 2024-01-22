@@ -22,8 +22,8 @@ package com.manning.javapersistence.ch09.maps.mapkey;
 
 import com.manning.javapersistence.ch09.Constants;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

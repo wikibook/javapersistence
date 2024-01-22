@@ -22,8 +22,8 @@ package com.manning.javapersistence.ch09.onetomany.jointable;
 
 import com.manning.javapersistence.ch09.Constants;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 public class Item {

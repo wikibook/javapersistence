@@ -20,10 +20,10 @@
  */
 package com.manning.javapersistence.ch06.model;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.AttributeOverride;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * Instead of <code>@Entity</code>, this component POJO is marked with <code>@Embeddable</code>. It

@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch09.manytomany.ternary;
 
 import com.manning.javapersistence.ch09.Constants;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;

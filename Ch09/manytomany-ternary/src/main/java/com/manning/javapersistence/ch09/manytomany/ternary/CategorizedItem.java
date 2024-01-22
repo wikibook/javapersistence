@@ -21,8 +21,8 @@
 
 package com.manning.javapersistence.ch09.manytomany.ternary;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.Objects;
 

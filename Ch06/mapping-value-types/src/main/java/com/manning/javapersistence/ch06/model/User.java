@@ -20,7 +20,7 @@
  */
 package com.manning.javapersistence.ch06.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "USERS")

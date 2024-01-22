@@ -22,10 +22,10 @@ package com.manning.javapersistence.ch03.validation;
 
 import org.junit.jupiter.api.Test;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
+import jakarta.validation.ValidatorFactory;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Set;
@@ -54,8 +54,8 @@ public class ModelValidation {
         assertAll(() -> assertEquals(1, violations.size()),
                 () -> assertEquals("auctionEnd", failedPropertyName),
                 () -> {
-                    if (Locale.getDefault().getLanguage().equals("en"))
-                        assertEquals(violation.getMessage(), "must be a future date");
+                    if (Locale.getDefault().getLanguage().equals("ko"))
+                        assertEquals(violation.getMessage(), "미래 날짜여야 합니다");
                 });
 
     }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Ch06/mapping-value-types/src/main/java/com/manning/javapersistence/ch06/model/Item.java" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/Ch06/mapping-value-types2/src/main/java/com/manning/javapersistence/ch06/model/Item.java" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/Ch07/mapping-inheritance-singletableformula/src/main/java/com/manning/javapersistence/ch07/model/BillingDetails.java" dialect="Sybase" />
+    <file url="file://$PROJECT_DIR$/Ch08/Ch08.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/Ch08/mapping-collections/src/main/java/com/manning/javapersistence/ch08/repositories/bagofembeddables/ItemRepository.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch08/mapping-collections/src/main/java/com/manning/javapersistence/ch08/repositories/mapofstringsembeddables/ItemRepository.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch08/mapping-collections/src/main/java/com/manning/javapersistence/ch08/repositories/setofembeddables/ItemRepository.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch08/mapping-collections/src/main/java/com/manning/javapersistence/ch08/repositories/setofstrings/ItemRepository.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch09/onetomany-list/src/main/java/com/manning/javapersistence/ch09/onetomany/list/Bid.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch10/Ch10.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch11/Ch11.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch11/transactions/src/test/java/com/manning/javapersistence/ch11/concurrency/Locking.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch12/Ch12.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch12/cartesianproduct/src/test/java/com/manning/javapersistence/ch12/cartesianproduct/CartesianProduct.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch13/Ch13.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch13/cascade/src/test/java/com/manning/javapersistence/ch13/filtering/Cascade.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc/src/main/resources/schema.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc2/src/main/java/com/manning/javapersistence/ch15/repositories/UserRepository.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc3/src/main/resources/schema.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc5/src/main/java/com/manning/javapersistence/ch15/repositories/AddressOneToManyRepository.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc5/src/main/resources/schema.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch15/spring-data-jdbc6/src/main/java/com/manning/javapersistence/ch15/repositories/UserAddressManyToManyRepository.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ch19/Ch19.sql" dialect="MySQL" />
+  </component>
+</project>

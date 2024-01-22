@@ -1,6 +1,6 @@
 @org.hibernate.annotations.GenericGenerator(
   name = "ID_GENERATOR",
-  strategy = "enhanced-sequence",
+  type = org.hibernate.id.enhanced.SequenceStyleGenerator.class,
   parameters = {
      @org.hibernate.annotations.Parameter(
         name = "sequence_name",

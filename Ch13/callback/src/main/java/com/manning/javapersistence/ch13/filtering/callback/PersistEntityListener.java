@@ -20,7 +20,7 @@
  */
 package com.manning.javapersistence.ch13.filtering.callback;
 
-import javax.persistence.PostPersist;
+import jakarta.persistence.PostPersist;
 
 /**
  * An entity listener class must have either no constructor or a public no-argument

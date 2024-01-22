@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch09.onetoone.foreignkey;
 
 import com.manning.javapersistence.ch09.Constants;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "USERS")

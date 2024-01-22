@@ -23,16 +23,18 @@ package com.manning.javapersistence.ch13.filtering;
 import com.manning.javapersistence.ch13.filtering.interceptor.AuditLogRecord;
 import com.manning.javapersistence.ch13.filtering.interceptor.Auditable;
 import org.hibernate.CallbackException;
-import org.hibernate.EmptyInterceptor;
+import org.hibernate.Interceptor;
 import org.hibernate.Session;
 import org.hibernate.type.Type;
 
-import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class AuditLogInterceptor extends EmptyInterceptor {
+public class AuditLogInterceptor implements Interceptor /*Hibernate 6.0 부터는
+                                                         `EmptyInterceptor` 대신,
+                                                         직접 `Interceptor` 를 구현해서 사용
+                                                         */ {
 
     /* 
        You need to access the database to write the audit log, so this interceptor
@@ -58,7 +60,7 @@ public class AuditLogInterceptor extends EmptyInterceptor {
        This method is called when an entity instance is made persistent.
      */
     @Override
-    public boolean onSave(Object entity, Serializable id,
+    public boolean onSave(Object entity, Object id,
                           Object[] state, String[] propertyNames, Type[] types)
             throws CallbackException {
 
@@ -74,7 +76,7 @@ public class AuditLogInterceptor extends EmptyInterceptor {
        during flushing of the persistence context.
      */
     @Override
-    public boolean onFlushDirty(Object entity, Serializable id,
+    public boolean onFlushDirty(Object entity, Object id,
                                 Object[] currentState, Object[] previousState,
                                 String[] propertyNames, Type[] types)
             throws CallbackException {
@@ -92,7 +94,7 @@ public class AuditLogInterceptor extends EmptyInterceptor {
        collected earlier.
      */
     @Override
-    public void postFlush(@SuppressWarnings("rawtypes") Iterator iterator) throws CallbackException {
+    public void postFlush(Iterator iterator) throws CallbackException {
 
         /* 
            You are not allowed to access the original persistence context, the

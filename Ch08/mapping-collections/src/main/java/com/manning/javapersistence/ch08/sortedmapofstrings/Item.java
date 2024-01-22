@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch08.sortedmapofstrings;
 
 import com.manning.javapersistence.ch08.Constants;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.SortedMap;

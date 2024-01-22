@@ -20,15 +20,16 @@
  */
 package com.manning.javapersistence.ch03.metamodel;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+import jakarta.persistence.criteria.*;
+import jakarta.persistence.metamodel.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.criteria.*;
-import javax.persistence.metamodel.*;
+import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -75,7 +76,7 @@ public class MetamodelTest {
 
         SingularAttribute<?, ?> auctionEndAttribute =
                 itemType.getSingularAttribute("auctionEnd");
-        assertAll(() -> assertEquals(Date.class, auctionEndAttribute.getJavaType()),
+        assertAll(() -> assertEquals(/*Date -> Timestamp 변경*/Timestamp.class, auctionEndAttribute.getJavaType()),
                 () -> assertFalse(auctionEndAttribute.isCollection()),
                 () -> assertFalse(auctionEndAttribute.isAssociation())
         );

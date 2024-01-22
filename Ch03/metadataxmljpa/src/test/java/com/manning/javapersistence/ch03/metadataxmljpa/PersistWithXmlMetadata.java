@@ -22,9 +22,9 @@ package com.manning.javapersistence.ch03.metadataxmljpa;
 
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertAll;

@@ -22,9 +22,9 @@ package com.manning.javapersistence.ch12.eagerjoin;
 
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 

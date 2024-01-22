@@ -9,7 +9,7 @@
         <class>com.manning.javapersistence.ch14.Bid</class>
 
         <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
 
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>

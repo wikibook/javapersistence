@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch16.model;
 
 //import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Objects;
 
 @Entity

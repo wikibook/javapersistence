@@ -22,8 +22,8 @@ package com.manning.javapersistence.ch13.filtering.envers;
 
 import com.manning.javapersistence.ch13.Constants;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;

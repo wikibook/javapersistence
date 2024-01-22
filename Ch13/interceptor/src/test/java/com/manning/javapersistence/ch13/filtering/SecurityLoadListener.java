@@ -4,8 +4,6 @@ import org.hibernate.HibernateException;
 import org.hibernate.event.internal.DefaultLoadEventListener;
 import org.hibernate.event.spi.LoadEvent;
 
-import java.io.Serializable;
-
 public class SecurityLoadListener extends DefaultLoadEventListener {
 
   @Override
@@ -25,7 +23,7 @@ public class SecurityLoadListener extends DefaultLoadEventListener {
     }
 
     public static class MySecurity {
-        static boolean isAuthorized(String entityName, Serializable entityId) {
+        static boolean isAuthorized(String entityName, Object entityId) {
            return true;
         }
     }

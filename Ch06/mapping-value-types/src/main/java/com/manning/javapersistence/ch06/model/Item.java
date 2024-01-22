@@ -22,11 +22,11 @@ package com.manning.javapersistence.ch06.model;
 
 import org.hibernate.annotations.*;
 
-import javax.persistence.*;
-import javax.persistence.AccessType;
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.persistence.AccessType;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -37,7 +37,7 @@ import java.util.Set;
 @Entity
 public class Item {
 
-    /* 
+    /*
        The <code>Item</code> entity defaults to field access, the <code>@Id</code> is on a field.
     */
     @Id
@@ -91,7 +91,7 @@ public class Item {
     @Column(insertable = false)
     @ColumnDefault("1.00")
     @Generated(
-            org.hibernate.annotations.GenerationTime.INSERT
+            event = {org.hibernate.generator.EventType.INSERT, org.hibernate.generator.EventType.UPDATE}
     )
     private BigDecimal initialPrice;
 

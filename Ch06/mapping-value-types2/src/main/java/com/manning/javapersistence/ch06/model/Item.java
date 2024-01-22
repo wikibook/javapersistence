@@ -21,13 +21,11 @@
 package com.manning.javapersistence.ch06.model;
 
 import com.manning.javapersistence.ch06.converter.MonetaryAmountConverter;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.*;
 import org.hibernate.annotations.*;
 
-import javax.persistence.*;
-import javax.persistence.AccessType;
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;

@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch08.onetomany.ondeletecascade;
 
 import com.manning.javapersistence.ch08.Constants;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;

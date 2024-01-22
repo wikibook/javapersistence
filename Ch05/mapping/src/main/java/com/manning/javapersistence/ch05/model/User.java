@@ -21,7 +21,7 @@
 package com.manning.javapersistence.ch05.model;
 
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "USERS")

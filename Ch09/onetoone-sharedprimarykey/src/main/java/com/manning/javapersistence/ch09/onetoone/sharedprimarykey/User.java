@@ -20,7 +20,7 @@
  */
 package com.manning.javapersistence.ch09.onetoone.sharedprimarykey;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "USERS")

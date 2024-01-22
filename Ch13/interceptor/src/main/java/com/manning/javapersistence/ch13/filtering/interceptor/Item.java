@@ -22,10 +22,10 @@ package com.manning.javapersistence.ch13.filtering.interceptor;
 
 import com.manning.javapersistence.ch13.Constants;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 public class Item implements Auditable {

@@ -20,7 +20,7 @@
  */
 package com.manning.javapersistence.springdatajpa.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
 

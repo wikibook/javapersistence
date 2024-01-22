@@ -21,9 +21,8 @@
 package com.manning.javapersistence.ch08.bagofstringsorderby;
 
 import com.manning.javapersistence.ch08.Constants;
-import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -40,12 +39,16 @@ public class Item {
     @ElementCollection
     @CollectionTable(name = "IMAGE")
     @Column(name = "FILENAME")
-    @GenericGenerator(name = "sequence_gen", strategy = "sequence")
-    @org.hibernate.annotations.CollectionId( // Surrogate PK allows duplicates!
-            columns = @Column(name = "IMAGE_ID"),
-            type = @org.hibernate.annotations.Type(type = "long"),
-            generator = "sequence_gen")
-    @org.hibernate.annotations.OrderBy(clause = "FILENAME desc")
+    @org.hibernate.annotations.GenericGenerator(
+            name = "sequence_gen",
+            type = org.hibernate.id.enhanced.SequenceStyleGenerator.class
+    )
+    @org.hibernate.annotations.CollectionIdJavaType(org.hibernate.type.descriptor.java.LongJavaType.class)
+    @org.hibernate.annotations.CollectionId(
+            column = @Column(name = "IMAGE_ID"),
+            generator = "sequence_gen"
+    )
+    @org.hibernate.annotations.SQLOrder("FILENAME desc")
     private Collection<String> images = new ArrayList<>();
 
     public Item(String name) {

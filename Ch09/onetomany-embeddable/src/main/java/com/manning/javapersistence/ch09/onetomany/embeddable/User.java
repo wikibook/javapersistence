@@ -22,10 +22,10 @@ package com.manning.javapersistence.ch09.onetomany.embeddable;
 
 import com.manning.javapersistence.ch09.Constants;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "USERS")

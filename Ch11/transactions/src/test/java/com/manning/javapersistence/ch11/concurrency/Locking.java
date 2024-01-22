@@ -23,7 +23,7 @@ package com.manning.javapersistence.ch11.concurrency;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
@@ -56,7 +56,7 @@ public class Locking extends Versioning {
             List<Item> items =
                     em.createQuery("select i from Item i where i.category.id = :catId", Item.class)
                             .setLockMode(LockModeType.PESSIMISTIC_READ)
-                            .setHint("javax.persistence.lock.timeout", 5000)
+                            .setHint("jakarta.persistence.lock.timeout", 5000)
                             .setParameter("catId", categoryId)
                             .getResultList();
 
@@ -115,7 +115,7 @@ public class Locking extends Versioning {
                                 em1.createQuery("select i from Item i where i.category.id = :catId", Item.class)
                                         .setParameter("catId", testData.categories.getFirstId())
                                         .setLockMode(LockModeType.PESSIMISTIC_WRITE) // Prevent concurrent access
-                                        .setHint("javax.persistence.lock.timeout", 5000) // Only works on Oracle...
+                                        .setHint("jakarta.persistence.lock.timeout", 5000) // Only works on Oracle...
                                         .getResultList();
 
                         Category lastCategory = em1.getReference(
@@ -169,7 +169,7 @@ public class Locking extends Versioning {
         em.getTransaction().begin();
 
         Map<String, Object> hints = new HashMap<>();
-        hints.put("javax.persistence.lock.timeout", 5000);
+        hints.put("jakarta.persistence.lock.timeout", 5000);
 
         // Executes a SELECT .. FOR UPDATE WAIT 5000 if supported by dialect
         Category category =

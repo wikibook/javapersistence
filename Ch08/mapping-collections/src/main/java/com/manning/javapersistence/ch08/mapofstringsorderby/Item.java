@@ -22,7 +22,7 @@ package com.manning.javapersistence.ch08.mapofstringsorderby;
 
 import com.manning.javapersistence.ch08.Constants;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -48,7 +48,7 @@ public class Item {
     @CollectionTable(name = "IMAGE")
     @MapKeyColumn(name = "FILENAME")
     @Column(name = "IMAGENAME")
-    @org.hibernate.annotations.OrderBy(clause = "FILENAME desc")
+    @org.hibernate.annotations.SQLOrder("FILENAME desc")
     private Map<String, String> images = new LinkedHashMap<>();
 
     public Long getId() {

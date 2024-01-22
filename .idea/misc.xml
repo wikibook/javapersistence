@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Ch02/helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch03/metamodel/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch03/validation/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch03/domainmodel/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch03/metadataxmljpa/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch04/springdatajpa/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch04/springdatajpa2/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch05/mapping/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch05/generator/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch06/mapping-value-types/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch06/mapping-value-types2/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch06/mapping-value-types3/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch06/mapping-value-types4/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch07/mapping-inheritance-mixed/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch07/mapping-inheritance-joined/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch07/mapping-inheritance-manytoone/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch07/mapping-inheritance-onetomany/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch07/mapping-inheritance-embeddable/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch07/mapping-inheritance-singletable/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch07/mapping-inheritance-tableperclass/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch07/mapping-inheritance-mappedsuperclass/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch07/mapping-inheritance-singletableformula/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch08/mapping-collections/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch08/mapping-associations/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/maps-mapkey/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/maps-ternary/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/onetomany-bag/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/onetomany-list/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/manytomany-ternary/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/onetoone-jointable/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/onetomany-jointable/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/onetoone-foreignkey/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/onetomany-embeddable/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/manytomany-linkentity/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/manytomany-bidirectional/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/onetoone-foreigngenerator/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/onetoone-sharedprimarykey/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch09/onetomany-embeddable-jointable/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch10/managing-data/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch10/managing-data2/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch11/transactions/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch11/transactions2/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch11/transactions3/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch11/transactions4/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch11/transactions5-springdata/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch12/batch/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch12/proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch12/profile/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch12/eagerjoin/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch12/eagerselect/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch12/fetchloadgraph/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch12/nplusoneselects/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch12/cartesianproduct/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch13/envers/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch13/cascade/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch13/dynamic/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch13/callback/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch13/interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch14/spring-jpa-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch14/spring-jpa-dao-gen/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch14/spring-hibernate-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch14/spring-hibernate-dao-gen/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch15/spring-data-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch15/spring-data-jdbc2/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch15/spring-data-jdbc3/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch15/spring-data-jdbc4/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch15/spring-data-jdbc5/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch15/spring-data-jdbc6/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch16/spring-data-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch16/spring-data-rest-events/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch16/spring-data-rest-projections/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch17/springdatamongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch17/springdatamongodb2/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch17/springdatamongodb3/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch18/hibernate-ogm/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch19/querydsl/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch20/1 spring testing/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch20/2 spring profiles/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch20/3 spring listeners/pom.xml" />
+        <option value="$PROJECT_DIR$/Ch12/subselect/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="graalvm-ce-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

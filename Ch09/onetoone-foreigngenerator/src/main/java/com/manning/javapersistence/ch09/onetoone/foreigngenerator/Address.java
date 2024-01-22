@@ -20,8 +20,8 @@
  */
 package com.manning.javapersistence.ch09.onetoone.foreigngenerator;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 public class Address {
@@ -30,7 +30,7 @@ public class Address {
     @GeneratedValue(generator = "addressKeyGenerator")
     @org.hibernate.annotations.GenericGenerator(
             name = "addressKeyGenerator",
-            strategy = "foreign",
+            type = org.hibernate.id.ForeignGenerator.class,
             parameters =
             @org.hibernate.annotations.Parameter(
                     name = "property", value = "user"

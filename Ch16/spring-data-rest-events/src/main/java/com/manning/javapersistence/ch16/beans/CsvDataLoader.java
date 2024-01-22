@@ -33,7 +33,8 @@ public class CsvDataLoader {
     @Bean
     public Auction buildAuctionFromCsv() throws IOException {
         Auction auction = new Auction("1234", 20);
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/users_information.csv"))) {
+        final String path = getClass().getClassLoader().getResource("users_information.csv").getPath();
+        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String line = null;
             do {
                 line = reader.readLine();

@@ -20,8 +20,8 @@
  */
 package com.manning.javapersistence.ch10;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.Collections;
 import java.util.HashSet;

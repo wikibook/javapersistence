@@ -20,10 +20,10 @@
  */
 package com.manning.javapersistence.ch07.model;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
+import jakarta.validation.constraints.NotNull;
 
 @MappedSuperclass
 public abstract class BillingDetails {

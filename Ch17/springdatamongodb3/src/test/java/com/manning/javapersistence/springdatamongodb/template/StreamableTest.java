@@ -34,7 +34,7 @@ class StreamableTest extends SpringDataMongoDBApplicationTests {
     @Test
     void testStreamable() {
         Query query = new Query(new Criteria().orOperator(Criteria.where("email").regex(".*someother.*"), Criteria.where("level").is(2)));
-        try (Stream<User> result = mongoTemplate.stream(query, User.class).stream().distinct()) {
+        try (Stream<User> result = mongoTemplate.stream(query, User.class).distinct()) {
             assertEquals(6, result.count());
         }
     }

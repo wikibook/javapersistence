@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mapping-inheritance-singletableformula" />
+        <module name="spring-data-jdbc6" />
+        <module name="querydsl" />
+        <module name="transactions5-springdata" />
+        <module name="spring-jpa-dao" />
+        <module name="spring-data-rest" />
+        <module name="spring-data-jdbc2" />
+        <module name="spring-data-jdbc3" />
+        <module name="spring-data-jdbc4" />
+        <module name="spring-data-jdbc5" />
+        <module name="spring-testing" />
+        <module name="managing-data2" />
+        <module name="onetomany-bag" />
+        <module name="dynamic" />
+        <module name="onetomany-list" />
+        <module name="springdatamongodb" />
+        <module name="validation" />
+        <module name="manytomany-ternary" />
+        <module name="domainmodel" />
+        <module name="onetomany-embeddable-jointable" />
+        <module name="helloworld" />
+        <module name="mapping" />
+        <module name="spring-data-jdbc" />
+        <module name="cascade" />
+        <module name="mapping-inheritance-joined" />
+        <module name="mapping-collections" />
+        <module name="profile" />
+        <module name="eagerjoin" />
+        <module name="batch" />
+        <module name="onetoone-jointable" />
+        <module name="spring-hibernate-dao" />
+        <module name="transactions" />
+        <module name="mapping-value-types4" />
+        <module name="proxy" />
+        <module name="mapping-value-types2" />
+        <module name="mapping-value-types3" />
+        <module name="mapping-inheritance-mixed" />
+        <module name="maps-mapkey" />
+        <module name="hibernate-ogm" />
+        <module name="fetchloadgraph" />
+        <module name="mapping-inheritance-tableperclass" />
+        <module name="onetomany-embeddable" />
+        <module name="mapping-inheritance-mappedsuperclass" />
+        <module name="maps-ternary" />
+        <module name="spring-hibernate-dao-gen" />
+        <module name="spring-profiles" />
+        <module name="onetoone-foreigngenerator" />
+        <module name="metamodel" />
+        <module name="eagerselect" />
+        <module name="envers" />
+        <module name="transactions4" />
+        <module name="generator" />
+        <module name="transactions3" />
+        <module name="onetoone-sharedprimarykey" />
+        <module name="transactions2" />
+        <module name="interceptor" />
+        <module name="spring-data-rest-projections" />
+        <module name="mapping-inheritance-manytoone" />
+        <module name="springdatajpa2" />
+        <module name="mapping-inheritance-embeddable" />
+        <module name="onetoone-foreignkey" />
+        <module name="springdatajpa" />
+        <module name="nplusoneselects" />
+        <module name="manytomany-linkentity" />
+        <module name="managing-data" />
+        <module name="spring-listeners" />
+        <module name="mapping-inheritance-singletable" />
+        <module name="springdatamongodb3" />
+        <module name="manytomany-bidirectional" />
+        <module name="mapping-inheritance-onetomany" />
+        <module name="spring-jpa-dao-gen" />
+        <module name="mapping-value-types" />
+        <module name="springdatamongodb2" />
+        <module name="spring-data-rest-events" />
+        <module name="metadataxmljpa" />
+        <module name="onetomany-jointable" />
+        <module name="subselect" />
+        <module name="callback" />
+        <module name="cartesianproduct" />
+        <module name="mapping-associations" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-data-jdbc2 (1)" target="17" />
+      <module name="spring-data-jdbc2 (2)" target="17" />
+      <module name="spring-data-jdbc2 (3)" target="17" />
+      <module name="spring-data-jdbc2 (4)" target="17" />
+      <module name="spring-data-jdbc2 (5)" target="17" />
+      <module name="subselect (1)" target="17" />
+      <module name="subselect (2)" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-data-jdbc" options="-parameters" />
+      <module name="spring-data-jdbc2" options="-parameters" />
+      <module name="spring-data-jdbc2 (1)" options="-parameters" />
+      <module name="spring-data-jdbc2 (2)" options="-parameters" />
+      <module name="spring-data-jdbc2 (3)" options="-parameters" />
+      <module name="spring-data-jdbc2 (4)" options="-parameters" />
+      <module name="spring-data-jdbc2 (5)" options="-parameters" />
+      <module name="spring-data-jdbc3" options="-parameters" />
+      <module name="spring-data-jdbc4" options="-parameters" />
+      <module name="spring-data-jdbc5" options="-parameters" />
+      <module name="spring-data-jdbc6" options="-parameters" />
+      <module name="spring-data-rest" options="-parameters" />
+      <module name="spring-data-rest-events" options="-parameters" />
+      <module name="spring-data-rest-projections" options="-parameters" />
+      <module name="spring-listeners" options="-parameters" />
+      <module name="spring-profiles" options="-parameters" />
+      <module name="spring-testing" options="-parameters" />
+      <module name="springdatajpa" options="-parameters" />
+      <module name="springdatajpa2" options="-parameters" />
+      <module name="springdatamongodb" options="-parameters" />
+      <module name="springdatamongodb2" options="-parameters" />
+      <module name="springdatamongodb3" options="-parameters" />
+    </option>
+  </component>
+</project>
