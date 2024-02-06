@@ -6,7 +6,7 @@
 
 - **커틀린 투도세** 지음 | **트랜스메이트** 옮김
 - ISBN: 9791158394769
-- 판형: 188*240*30mm
+- 판형: 188\*240\*30mm
 - 48,000원 | 2024년 2월 22일 발행 | 728쪽
 - [책 홈페이지](https://wikibook.co.kr/javapersistence/)
 - [도서 미리보기](http://www.yes24.com/Product/Viewer/Preview/124899724)
